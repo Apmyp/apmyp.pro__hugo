@@ -1,1 +1,10 @@
-123
+{{ define "main" }}
+<div class="wrapper">
+  <h1 class="main-header">Такой страницы нет :(</h1>
+  <div class="post-wrapper">
+    <p>Или больше нет. Посмотри вот эти посты, скорее всего найдешь что нужно.</p>
+  </div>
+  {{ partial "all_posts.html" . }}
+</div>
+{{- partial "about.html" . -}}
+{{ end }}
