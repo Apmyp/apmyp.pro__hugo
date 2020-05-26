@@ -1,0 +1,10 @@
+ {{ range first 1 .Pages }}
+    <section class="chunk">
+      <header class="chunk__title">крайняя заметка</header>
+      <ul class="chunk__list">
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+      </ul>
+    </section>
+  {{ end }}

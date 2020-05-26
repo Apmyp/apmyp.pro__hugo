@@ -12,6 +12,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'PT Sans', system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue;
+  color: #040404;
 }
 
 .visually-hidden { 
@@ -116,7 +117,17 @@ a {
   width: 190px;
 }
 
+.chunks {
+  margin-top: 60px;
+  display: flex;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 50%;
+  flex-wrap: wrap;
+}
+
 .chunk {
+  width: 50%;
   font-size: 24px;
   line-height: 40px;
   margin-top: 32px;
@@ -144,13 +155,14 @@ a {
 
 .main-header {
   font-size: 48px;
+  font-weight: normal;
   line-height: 70px;
   margin-top: 70px;
   margin-bottom: 40px;
 }
 
 .footer {
-  margin-top: 120px;
+  margin-top: 100px;
   font-size: 16px;
   color: $gray;
 }
@@ -180,4 +192,32 @@ a {
 
 .footer__list a {
   font-size: inherit;
+}
+
+.post {
+  margin-top: 50px;
+  margin-bottom: 100px;
+
+  h1 {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    font-weight: normal;
+  }
+
+  .post__info { 
+    font-size: 16px;
+    color: $gray;
+    margin: 0;
+    line-height: 36px;
+  }
+}
+
+.post-wrapper {
+  max-width: 700px;
+  font-size: 18px;
+
+  h2, h3, h4, h5, h6 {
+    font-weight: normal;
+  }
 }

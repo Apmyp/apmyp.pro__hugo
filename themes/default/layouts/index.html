@@ -1,4 +1,10 @@
 {{ define "main" }}
 {{- partial "about.html" . -}}
-{{- partial "posts.html" . -}}
+
+<div class="wrapper">
+  <h1 class="main-header">Блог</h1>
+  {{ partial "latest_post.html" . }}
+  {{ partial "posts.html" . }}
+</div>
+
 {{ end }}
