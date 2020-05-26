@@ -1,8 +1,8 @@
 ---
 title: "How shortener feature works"
 date: 2020-05-26T13:24:02+03:00
-draft: true
 categories: ["case"]
+description: "Arthur Bordenyuk is going to explain how to implement url shortener"
 ---
 
 I have to make a system which can give us short version of URL and a way to track clicks.
