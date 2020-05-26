@@ -1,0 +1,20 @@
+<footer class="footer">
+  <div class="wrapper footer__wrapper">
+    <img class="footer__image" src="{{ absURL "images/superhero.png" }}" alt="Superapmyp">
+    <div class="footer__info">
+      <b class="footer__info-title">для связи:</b>
+      <ul  class="footer__list">
+        <li>
+          <a href="mailto:me@apmyp.pro">me@apmyp.pro</a>
+        </li>
+        <li>
+          <a href="tg://resolve?domain=apmyp0">телеграм</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+{{ $scriptPath := "js/index.js" }}
+{{ $scripts := resources.Get $scriptPath | resources.ExecuteAsTemplate $scriptPath . | resources.Minify | resources.Fingerprint "sha512" }}
+<script src='{{ $scripts.Permalink }}' integrity="{{ $scripts.Data.Integrity }}"></script>

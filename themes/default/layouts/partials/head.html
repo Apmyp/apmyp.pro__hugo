@@ -1,0 +1,11 @@
+<head>
+  <title>{{ with .Title }}{{ humanize . }} | {{ end }}{{ .Site.Title }}</title>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <link rel='canonical' href='{{ .Permalink }}'>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  {{- $options := (dict "targetPath" "css/main.css" "outputStyle" "expanded" "enableSourceMap" "true") -}}
+  {{- $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | resources.ToCSS $options | resources.Minify | resources.Fingerprint "sha512" }}
+  <link rel='stylesheet' href='{{ $styles.Permalink }}' integrity='{{ $styles.Data.Integrity }}'>
+</head>
