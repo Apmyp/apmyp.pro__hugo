@@ -8,6 +8,7 @@ $yellow_darken: darken($yellow, 15%);
 $yellow_lighten: lighten($yellow, 30%);
 
 @import "normalize.scss";
+@import "video.scss";
 
 body {
   background: #fff;
