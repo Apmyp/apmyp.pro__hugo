@@ -7,24 +7,26 @@
     </div>
     <nav class="menu">
       <ul class="menu__list">
-        <li class="menu__list-item">
-          <a class="menu__link" href="#">Посты</a>
-        </li>
-        <li class="menu__list-item">
-          <a class="menu__link" href="#">Лайфхаки</a>
-        </li>
-        <li class="menu__list-item">
-          <a class="menu__link" href="#">Личность</a>
-        </li>
-        <li class="menu__list-item">
-          <a class="menu__link" href="#">Принципы</a>
-        </li>
-        <li class="menu__list-item">
-          <a class="menu__link" href="#">Чеклисты</a>
-        </li>
-        <li class="menu__list-item">
-          <a class="menu__link" href="#">Кейсы</a>
-        </li>
+        {{ range $taxonomyname, $taxonomy := $.Site.Taxonomies }}
+          {{ if eq "categories" $taxonomyname }}
+              <li class="menu__list-item">
+                <a class="menu__link" href="{{ absURL "" }}">
+                  Все заметки
+                </a>
+              </li>
+              {{ range $key, $value := $taxonomy.Alphabetical }}
+                  <li class="menu__list-item">
+                    {{ range first 1 $value.Pages }}
+                      {{ range first 1 .Params.categories }}
+                        <a class="menu__link" href="{{ "/categories/" | absURL }}{{ . | urlize }}">
+                          {{ with $.Site.GetPage (printf "%s/%s" "/categories" (. | urlize)) }}{{ .Title }}{{ end }}
+                        </a>
+                      {{ end }}
+                    {{ end }}
+                  </li>
+              {{ end }}
+          {{ end }}
+        {{ end }}
       </ul>
     </nav>
   </div>

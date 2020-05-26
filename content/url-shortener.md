@@ -2,7 +2,7 @@
 title: "How shortener feature works"
 date: 2020-05-20T13:24:02+03:00
 draft: true
-categories: ["кейс"]
+categories: ["case"]
 ---
 
 I have to make a system which can give us short version of URL and a way to track clicks.

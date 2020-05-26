@@ -2,3 +2,6 @@ baseURL = "https://apmyp.pro/"
 languageCode = "ru-ru"
 title = "Апмип.про"
 theme = "default"
+
+[taxonomies]
+	category	= "categories"

@@ -1,0 +1,22 @@
+{{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+  {{ if eq "categories" $taxonomyname }}
+    <div class="chunks">
+      {{ range $key, $value := $taxonomy.Alphabetical }}
+      <section class="chunk">
+        <header class="chunk__title">
+          {{ range first 1 $value.Pages }}
+            {{ range first 1 .Params.categories }}
+              {{ with $.Site.GetPage (printf "%s/%s" "/categories" (. | urlize)) }}{{ .Title }}{{ end }}
+            {{ end }}
+          {{ end }}
+        </header>
+        <ul class="chunk__list">
+          {{ range $value.Pages }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </section>
+      {{ end }}
+    </div>
+  {{ end }}
+{{ end }}

@@ -1,16 +1,7 @@
-{{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-  {{ if eq "categories" $taxonomyname }}
-    <div class="chunks">
-      {{ range $key, $value := $taxonomy }}
-      <section class="chunk">
-        <header class="chunk__title">{{ $key }}</header>
-        <ul class="chunk__list">
-          {{ range $value.Pages }}
-          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-          {{ end }}
-        </ul>
-      </section>
-      {{ end }}
-    </div>
-  {{ end }}
-{{ end }}
+<section class="chunk">
+  <ul class="chunk__list">
+    {{ range .Pages }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+</section>

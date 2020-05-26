@@ -2,7 +2,7 @@
 title: "Чеклист по вёрстке"
 date: 2019-12-13T13:24:02+03:00
 draft: true
-categories: ["чеклист"]
+categories: ["checklist"]
 ---
 
 **Текст**
