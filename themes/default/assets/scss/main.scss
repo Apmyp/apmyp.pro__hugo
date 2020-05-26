@@ -235,6 +235,8 @@ only screen and (                min-resolution: 2dppx) {
   font-weight: normal;
   color: $gray;
   text-transform: lowercase;
+  font-size: 24px;
+  margin: 0;
 }
 
 .chunk__list {
