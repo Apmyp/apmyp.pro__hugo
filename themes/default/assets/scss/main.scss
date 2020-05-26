@@ -47,8 +47,18 @@ a {
 }
 
 .wrapper {
-  width: 1000px;
-  margin: 0 auto;
+  width: calc(100% - 24px);
+  margin: 0 12px;
+
+  @media(min-width: 1000px) {
+    width: calc(100% - 24px);
+    margin: 0 12px;
+  }
+
+  @media(min-width: 1024px) {
+    width: 1000px;
+    margin: 0 auto;
+  }
 }
 
 .header {
@@ -67,7 +77,14 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+  line-height: 40px;
   display: flex;
+  flex-wrap: wrap;
+  
+  @media(min-width: 1000px) {
+    line-height: auto;
+    flex-wrap: nowrap;
+  }
 }
 
 .menu__list-item:not(:last-child) {
@@ -77,8 +94,13 @@ a {
 .about {
   background-color: $purple;
   color: #fbfbfb;
-  margin-top: 50px;
-  padding: 50px 0;
+  margin: 50px -8px 0 -8px;
+  padding: 50px 8px;
+
+  @media(min-width: 1000px) {
+    margin: 50px 0 0 0;
+    padding: 50px 0;
+  }
 }
 
 .about__wrapper {
@@ -87,16 +109,37 @@ a {
 
 .about__title {
   display: block;
-  font-size: 48px;
+  font-size: 44px;
   font-weight: normal;
   margin: 0 0 15px 0;
+  position: relative;
+  z-index: 1050;
+
+  @media(min-width: 1000px) {
+    font-size: 48px;
+    width: 500px;
+  }
 }
 
 .about__text {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 26px;
   margin: 0;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  z-index: 1050;
+
+  @media(min-width: 767px) {
+    width: 500px;
+    max-width: auto;
+  }
+
+  @media(min-width: 1000px) {
+    font-size: 24px;
+    width: 500px;
+    max-width: auto;
+  }
 }
 
 .about__link {
@@ -112,25 +155,43 @@ a {
 
 .about__image {
   position: absolute;
-  right: 0;
-  bottom: -15%;
-  width: 190px;
+  right: -2%;
+  top: -42%;
+  width: 100px;
+  z-index: 1030;
+
+  @media(min-width: 1000px) {
+    right: 0;
+    bottom: -15%;
+    width: 190px;
+  }
 }
 
 .chunks {
-  margin-top: 60px;
-  display: flex;
-  flex-shrink: 0;
-  flex-grow: 0;
-  flex-basis: 50%;
-  flex-wrap: wrap;
+  margin-top: 44px;
+
+  @media(min-width: 1000px) {
+    margin-top: 60px;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+  }
 }
 
 .chunk {
-  width: 50%;
-  font-size: 24px;
-  line-height: 40px;
-  margin-top: 32px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 36px;
+
+  @media(min-width: 1000px) {
+    margin-top: 32px;
+    font-size: 24px;
+    line-height: 40px;
+    width: 50%;
+  }
 
   &:first-child {
     margin-top: 0;
@@ -149,16 +210,32 @@ a {
   list-style: none;
 }
 
+.chunk__list li {
+  display: block;
+  margin: 16px 0;
+
+  @media(min-width: 1000px) {
+    display: inherit;
+    margin: 0;
+  }
+}
+
 .chunk__list a {
   font-size: inherit;
 }
 
 .main-header {
-  font-size: 48px;
+  font-size: 44px;
   font-weight: normal;
   line-height: 70px;
-  margin-top: 70px;
-  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 0;
+
+  @media(min-width: 1000px) {
+    font-size: 48px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
 }
 
 .footer {
@@ -199,10 +276,15 @@ a {
   margin-bottom: 100px;
 
   h1 {
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 30px;
+    line-height: 30px;
     margin: 0;
     font-weight: normal;
+
+    @media(min-width: 767px) {
+      font-size: 36px;
+    line-height: 36px;
+    }
   }
 
   .post__info { 
@@ -214,8 +296,19 @@ a {
 }
 
 .post-wrapper {
-  max-width: 700px;
+  width: 100%;
+  max-width: 500px;
   font-size: 18px;
+
+  @media(min-width: 767px) {
+    width: inherit;
+    max-width: 500px;
+  }
+
+  @media(min-width: 1000px) {
+    width: inherit;
+    max-width: 700px;
+  }
 
   h2, h3, h4, h5, h6 {
     font-weight: normal;
