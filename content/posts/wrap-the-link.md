@@ -12,4 +12,4 @@ categories: ["development"]
 - обернуть вокруг всей карточки, ❌
 - и растянуть. ✔️
 
-[Посмотреть пример на jsfiddle.net](https://jsfiddle.net/apmyp/6hokma43/)
+{{< l "Посмотреть пример на jsfiddle.net" "https://jsfiddle.net/apmyp/6hokma43/" >}}

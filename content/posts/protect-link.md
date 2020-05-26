@@ -17,5 +17,5 @@ categories: ["development"]
 </a>
 ```
 
-Подробнее
-[Почему опасно не добавляет правильный rel?](https://github.com/iammerrick/unvalidated-redirects-example)
+Подробнее  
+{{< l "Почему опасно не добавляет правильный rel?" "https://github.com/iammerrick/unvalidated-redirects-example" >}}

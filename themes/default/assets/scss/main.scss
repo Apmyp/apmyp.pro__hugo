@@ -332,6 +332,7 @@ only screen and (                min-resolution: 2dppx) {
   width: 100%;
   max-width: 500px;
   font-size: 18px;
+  line-height: 22px;
 
   @media(min-width: 767px) {
     width: inherit;
