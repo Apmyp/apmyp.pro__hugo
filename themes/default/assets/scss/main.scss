@@ -158,12 +158,39 @@ a {
   right: -2%;
   top: -42%;
   width: 100px;
+  height: 160px;
   z-index: 1030;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url({{ absURL "images/apmyp_small.png" }});  
+  background-size: contain;
+
+  @media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  background-image: url({{ absURL "images/apmyp_small_x2.png" }});    
+}
 
   @media(min-width: 1000px) {
     right: 0;
     bottom: -15%;
     width: 190px;
+    height: 304px;
+    background-image: url({{ absURL "images/apmyp_large.png" }});
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+      background-image: url({{ absURL "images/apmyp_large_x2.png" }});    
+    }
   }
 }
 
