@@ -5,3 +5,9 @@ theme = "default"
 
 [taxonomies]
 	category	= "categories"
+
+[params]
+	description = "Артур Борденюк ведет блог о разработке, проектном управлении и философии, новый пост каждую неделю"
+	Tagline = "Arthur Bordenyuk makes you be aware of mindfulness"
+	author = "Arthur Bordenyuk"
+	og_image = "og_image.png"

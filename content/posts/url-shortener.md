@@ -1,6 +1,6 @@
 ---
 title: "How shortener feature works"
-date: 2020-05-20T13:24:02+03:00
+date: 2020-05-26T13:24:02+03:00
 draft: true
 categories: ["case"]
 ---
