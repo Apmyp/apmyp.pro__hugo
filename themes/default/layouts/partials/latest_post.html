@@ -1,7 +1,7 @@
 {{ $posts := ($.Site.GetPage "posts" .Section).Pages }}
  {{ range first 1 $posts }}
     <section class="chunk">
-      <header class="chunk__title">крайняя заметка</header>
+      <h2 class="chunk__title">крайняя заметка</h2>
       <ul class="chunk__list">
         <li>
           <a href="{{ .Permalink }}">{{ .Title }}</a>
