@@ -1,5 +1,4 @@
 <head>
-  <title>{{ if .IsHome }}Блог Артура про IT{{ else }}{{ with .Title }}{{ humanize . }} - {{ end }}{{ .Site.Title }}{{ end }}</title>
   <meta charset='utf-8'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -12,6 +11,7 @@
   {{- $options := (dict "targetPath" "css/main.css" "outputStyle" "expanded" "enableSourceMap" "true") -}}
   {{- $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | resources.ToCSS $options | resources.Minify | resources.Fingerprint "sha512" }}
   <link rel='stylesheet' href='{{ $styles.Permalink }}' integrity='{{ $styles.Data.Integrity }}'>
+  <link rel="alternate" type="application/rss+xml" href="{{ absURL "index.xml" }}" title="RSS">
 
   {{ partial "favicons.html" . }}
   {{ partial "meta.html" . }}

@@ -1,17 +1,17 @@
+<title>{{ if .IsHome }}Блог Артура про IT{{ else }}{{ with .Title }}{{ humanize . }} - {{ end }}{{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}">
+<meta name="keywords" content="{{ .Site.Params.keywords }}">
 <meta name="robots" content="noodp">
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:description"
-  content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}">
-<meta name="twitter:title"
-  content="{{ .Title }} - {{ if .IsHome }}{{ .Site.Params.Tagline }}{{ else }}{{ .Site.Title }}{{ end }}">
+<meta name="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}">
+<meta name="twitter:title"content="{{ if .IsHome }}Блог Артура про IT{{ else }}{{ with .Title }}{{ humanize . }} - {{ end }}{{ .Site.Title }}{{ end }}">
 <meta name="twitter:site" content="{{ .Site.Params.twitter }}">
 <meta name="twitter:creator" content="{{ .Site.Params.twitter }}">
 
 <meta property="og:locale" content="ru_RU">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-<meta content="{{ .Title }}" property="og:title">
+<meta content="{{ if .IsHome }}Блог Артура про IT{{ else }}{{ with .Title }}{{ humanize . }} - {{ end }}{{ .Site.Title }}{{ end }}" property="og:title">
 <meta content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" property="og:description">
 <meta property="og:url" content="{{ absURL .Permalink }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">

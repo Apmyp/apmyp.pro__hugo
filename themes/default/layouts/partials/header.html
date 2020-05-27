@@ -1,8 +1,8 @@
 <header class="header">
   <div class="wrapper">
     <div class="logo">
-      <a href="{{ absURL "" }}">
-        <img src="{{ absURL "images/logo.svg" }}" alt="Apmyp">
+      <a href="{{ absURL "" }}" title="Apmyp">
+        <img src="{{ absURL "images/logo.svg" }}" title="Apmyp" alt="Apmyp">
       </a>
     </div>
     <nav class="menu">
@@ -18,7 +18,7 @@
                   <li class="menu__list-item">
                     {{ range first 1 $value.Pages }}
                       {{ range first 1 .Params.categories }}
-                        <a class="menu__link" href="{{ "/categories/" | absURL }}{{ . | urlize }}">
+                        <a class="menu__link" href="{{ "/categories/" | absURL }}{{ . | urlize }}/">
                           {{ with $.Site.GetPage (printf "%s/%s" "/categories" (. | urlize)) }}{{ .Title }}{{ end }}
                         </a>
                       {{ end }}

@@ -1,5 +1,5 @@
 $purple: #45046A;
-$gray: #A3A3A3;
+$gray: #737373;
 $blue_link: #226BFC;
 $blue_link_darken: darken($blue_link, 5%);
 $blue_link_lighten: lighten($blue_link, 25%);
@@ -276,6 +276,7 @@ only screen and (                min-resolution: 2dppx) {
 .footer {
   margin-top: 100px;
   font-size: 16px;
+  line-height: 22px;
   color: $gray;
 }
 
