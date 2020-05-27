@@ -85,7 +85,7 @@ a {
   flex-wrap: wrap;
   
   @media(min-width: 1000px) {
-    line-height: auto;
+    line-height: inherit;
     flex-wrap: nowrap;
   }
 }
@@ -97,13 +97,8 @@ a {
 .about {
   background-color: $purple;
   color: #fbfbfb;
-  margin: 50px -8px 0 -8px;
-  padding: 50px 8px;
-
-  @media(min-width: 1000px) {
-    margin: 50px 0 0 0;
-    padding: 50px 0;
-  }
+  margin: 50px 0 0 0;
+  padding: 50px 0;
 }
 
 .about__wrapper {
@@ -137,14 +132,14 @@ a {
   @media(min-width: 767px) {
     position: inherit;
     width: 500px;
-    max-width: auto;
+    max-width: inherit;
   }
 
   @media(min-width: 1000px) {
     position: inherit;
     font-size: 24px;
     width: 500px;
-    max-width: auto;
+    max-width: inherit;
   }
 }
 
@@ -161,7 +156,7 @@ a {
 
 .about__image {
   position: absolute;
-  right: -2%;
+  right: 0;
   top: -42%;
   width: 100px;
   height: 160px;
@@ -278,19 +273,39 @@ only screen and (                min-resolution: 2dppx) {
   font-size: 16px;
   line-height: 22px;
   color: $gray;
+  margin-bottom: 40px;
+
+  @media(min-width: 767px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__image {
   width: 55px;
+  margin-right: auto;
+
+  @media(min-width: 767px) {
+    margin-right: inherit;
+  }
 }
 
 .footer__wrapper {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+
+  @media(min-width: 767px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .footer__info {
-  margin-left: 48px;
+  width: 50%;
+
+  @media(min-width: 767px) {
+    width: inherit;
+    margin-left: 48px;
+  }
 }
 
 .footer__info-title {
