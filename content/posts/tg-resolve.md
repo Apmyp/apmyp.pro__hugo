@@ -4,6 +4,7 @@ date: 2020-05-30T10:00:02+03:00
 categories: ["lifehack"]
 description: "Чтобы ссылка работала, а пользователь не страдал, можно применить магию"
 og_image: "/images/tg-resolve/tg_resolve_og_image.png"
+twitter_og_image: "/images/tg-resolve/tg_resolve_twitter_og_image.png"
 ---
 
 Если кто-то хочет забанить телеграм, то&nbsp;проще всего начать с&nbsp;доменов t.me и&nbsp;telegram.me. 
