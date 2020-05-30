@@ -10,7 +10,7 @@ og_image: "/images/tg-resolve/tg_resolve_og_image.png"
 
 Чтобы ссылка работала, а&nbsp;пользователь не&nbsp;страдал, можно применить магию. Установленный Телеграм на&nbsp;компе или телефоне понимает переходы из&nbsp;браузера, которые начинаются с&nbsp;tg://.
 
-Ссылка, которую нельзя заблокировать будет выглядеть так:  
+Ссылка, которую нельзя заблокировать выглядит так:  
 [tg://resolve?domain=apmyp0](tg://resolve?domain=apmyp0)
 
 Можно ссылаться [на&nbsp;каналы](tg://resolve?domain=magnificent_apmyp). И&nbsp;даже [на&nbsp;ботов](tg://resolve?domain=apm_pricewatcher_bot).
