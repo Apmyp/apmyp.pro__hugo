@@ -5,9 +5,9 @@ categories: ["development"]
 description: "Когда тестируешь че-то используй этот домен"
 ---
 
-Для тестов и документации выгодно использовать домен example.com. Домен зарезервирован IANA. Он точно никому не помешает и не испортит репутацию.
+Для тестов и документации выгодно использовать домен example.com. Домен зарезервирован IANA. Он точно никому не помешает и не испортит репутацию.
 
-Смело регайся локально на apmyp@example.com, используй в формах http://example.com и не парься о том, что кому уйдет лишний имейл или постбэк.
+Смело регайся локально на [apmyp@example.com](mailto:apmyp@example.com), используй в формах <http://example.com> и не парься о том, что кому уйдет лишний имейл или постбэк.
 
-Про example.com в Википедии:  
-{{< l "https://en.wikipedia.org/wiki/Example.com" "https://en.wikipedia.org/wiki/Example.com" >}}
+Про example.com в Википедии:\
+{{\< l «[https://en.wikipedia.org/wiki/Example.com»](https://en.wikipedia.org/wiki/Example.com") "[https://en.wikipedia.org/wiki/Example.com»](https://en.wikipedia.org/wiki/Example.com") >}}

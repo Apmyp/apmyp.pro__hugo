@@ -5,7 +5,7 @@ categories: ["development"]
 description: "Добавь рел и спи спокойно"
 ---
 
-Надо выработать новую привычку. Добавлять ко внешним ссылкам не только target=_blank, но и rel=noopener noreferrer. Так внешние сайты не смогут сделать плохо.
+Надо выработать новую привычку. Добавлять ко внешним ссылкам не только target=\_blank, но и rel=noopener noreferrer. Так внешние сайты не смогут сделать плохо.
 
 ```
 <a 
@@ -17,5 +17,5 @@ description: "Добавь рел и спи спокойно"
 </a>
 ```
 
-Подробнее  
-{{< l "Почему опасно не добавляет правильный rel?" "https://github.com/iammerrick/unvalidated-redirects-example" >}}
+Подробнее\
+{{\< l «Почему опасно не добавляет правильный rel?» "[https://github.com/iammerrick/unvalidated-redirects-example»](https://github.com/iammerrick/unvalidated-redirects-example") >}}
