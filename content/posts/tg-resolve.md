@@ -2,7 +2,7 @@
 title: "Как сделать ссылку на Телеграм"
 date: 2020-05-30T10:00:02+03:00
 categories: ["lifehack"]
-description: "Чтобы ссылка работала, а пользователь не страдал, можно применить магию"
+description: "Чтобы ссылка работала, а пользователь не страдал, можно применить магию. Вместо домена t.me можно использовать tg://resolve"
 og_image: "/images/tg-resolve/tg_resolve_og_image.png"
 twitter_og_image: "/images/tg-resolve/tg_resolve_twitter_og_image.png"
 ---
