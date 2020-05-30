@@ -13,4 +13,4 @@ og_image: "/images/tg-resolve/tg_resolve_og_image.png"
 Ссылка, которую нельзя заблокировать выглядит так:  
 [tg://resolve?domain=apmyp0](tg://resolve?domain=apmyp0)
 
-Можно ссылаться [на&nbsp;каналы](tg://resolve?domain=magnificent_apmyp). И&nbsp;даже [на&nbsp;ботов](tg://resolve?domain=apm_pricewatcher_bot).
+Кроме людей, можно ссылаться [на&nbsp;каналы](tg://resolve?domain=magnificent_apmyp). И&nbsp;даже [на&nbsp;ботов](tg://resolve?domain=apm_pricewatcher_bot).
