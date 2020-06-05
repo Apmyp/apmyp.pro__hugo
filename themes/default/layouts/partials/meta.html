@@ -5,7 +5,7 @@
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}">
-<meta name="twitter:title"content="{{ if .IsHome }}Блог Артура про IT{{ else }}{{ with .Title }}{{ humanize . }} - {{ end }}{{ .Site.Title }}{{ end }}">
+<meta name="twitter:title" content="{{ if .IsHome }}Блог Артура про IT{{ else }}{{ with .Title }}{{ humanize . }} - {{ end }}{{ .Site.Title }}{{ end }}">
 <meta name="twitter:site" content="{{ .Site.Params.twitter }}">
 <meta name="twitter:creator" content="{{ .Site.Params.twitter }}">
 {{ if .Params.twitter_og_image }}
@@ -42,7 +42,10 @@
     "name": "{{ .Site.Title }}",
       "author": {
         "@type": "Person",
-        "name": "{{ .Site.Params.author }}"
+        "name": "{{ .Site.Params.author }}",
+        "sameAs" : [
+          "https://twitter.com/apmyp0"
+        ]
       },
     "description": "{{ .Site.Params.description }}"
   }
@@ -67,15 +70,22 @@
         },
         "author": {
             "@type": "Person",
-            "name": "{{ .Site.Params.author }}"
+            "name": "{{ .Site.Params.author }}",
+            "sameAs" : [
+              "https://twitter.com/apmyp0"
+            ]
         },
         "publisher": {
           "@type": "Organization",
           "name": "{{ .Site.Params.author }}",
+          "url": "{{ .Site.BaseURL }}",
           "logo": {
             "@type": "ImageObject",
             "url": "{{ absURL "favicon.png" }}"
-          }
+          },
+          "sameAs" : [
+            "https://twitter.com/apmyp0"
+          ]
         }
       }
     </script>

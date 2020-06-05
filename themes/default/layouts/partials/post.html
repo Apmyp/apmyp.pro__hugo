@@ -1,14 +1,28 @@
-<div class="post">
+<article class="post">
   <div class="wrapper">
-    <h1>{{ .Title }}</h1>
-    <p class="post__info"><time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Day }}
-      {{ index $.Site.Data.Months.months_rod .Date.Month }} {{ .Date.Year }}</time></p>
+    <header>
+      <h1>{{ .Title }}</h1>
+      <p class="post__info"><time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Day }}
+          {{ index $.Site.Data.Months.months_rod .Date.Month }} {{ .Date.Year }}</time></p>
+    </header>
 
-    <div class="post-wrapper">
-      {{ .Content }}
-      <p class="post__ps">
-        P.S. Свежие посты публикуются в <a title="Канал в телеграме Артур и до" href="tg://resolve?domain=magnificent_apmyp" target="_blank">телеграме</a>. Если чувствуешь, что они полезны, то подпишись.
-      </p>
+    <div class="post-container">
+      <div class="post-wrapper">
+        {{ .Content }}
+        <p class="post__ps">
+          P.S. Свежие посты публикуются в <a title="Канал в телеграме Артур и до"
+            href="tg://resolve?domain=magnificent_apmyp" target="_blank">телеграме</a>. Если чувствуешь, что они
+          полезны, то подпишись.
+        </p>
+      </div>
+      {{ if .Params.toc }}
+        <aside class="post-toc">
+          <div class="post-toc-wrapper">
+            <header><b>Содержание</b></header>
+            {{ .TableOfContents }}
+          </div>
+        </aside>
+      {{ end }}
     </div>
   </div>
 </div>
