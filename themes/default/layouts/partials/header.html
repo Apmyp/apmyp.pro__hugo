@@ -1,32 +1,30 @@
 <header class="header">
-  <div class="wrapper">
-    <div class="logo">
-      <a href="{{ absURL "" }}" title="Apmyp">
-        <img src="{{ absURL "images/logo.svg" }}" title="Apmyp" alt="Apmyp">
+  <div class="header__wrapper wrapper">
+    <div class="header__logo">
+      <a class="header__logo-link" href="{{ absURL "" }}">
+        <img class="header__logo-image" src="{{ absURL "images/cube-logo.svg" }}" title="Блог о разработке" alt="Блог о разработке">
       </a>
     </div>
-    <nav class="menu">
+    <nav class="header__menu menu">
+      <button type="button" class="menu__button" aria-expanded="false" aria-controls="menu__list">
+        <svg class="menu__icon" aria-hidden="true" width="32" height="32">
+          <use class="menu__icon-menu" href="{{ absURL "images/sprite.svg" }}#menu"></use>
+          <use class="menu__icon-cross" href="{{ absURL "images/sprite.svg" }}#cross"></use>
+        </svg>
+      </button>
       <ul class="menu__list">
-        {{ range $taxonomyname, $taxonomy := $.Site.Taxonomies }}
-          {{ if eq "categories" $taxonomyname }}
-              <li class="menu__list-item">
-                <a class="menu__link" href="{{ absURL "" }}">
-                  Все заметки
-                </a>
-              </li>
-              {{ range $key, $value := $taxonomy.Alphabetical }}
-                  <li class="menu__list-item">
-                    {{ range first 1 $value.Pages }}
-                      {{ range first 1 .Params.categories }}
-                        <a class="menu__link" href="{{ "/categories/" | absURL }}{{ . | urlize }}/">
-                          {{ with $.Site.GetPage (printf "%s/%s" "/categories" (. | urlize)) }}{{ .Title }}{{ end }}
-                        </a>
-                      {{ end }}
-                    {{ end }}
-                  </li>
-              {{ end }}
-          {{ end }}
-        {{ end }}
+        <li class="menu__item">
+          <a href="{{ absURL "" }}" class="menu__link">Все заметки</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link menu__link--disabled">Книги</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link menu__link--disabled">Избранное</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link menu__link--disabled">Контакты</a>
+        </li>
       </ul>
     </nav>
   </div>

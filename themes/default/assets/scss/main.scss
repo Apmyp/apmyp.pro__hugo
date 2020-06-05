@@ -6,9 +6,12 @@ $blue_link_lighten: lighten($blue_link, 25%);
 $yellow: #f1ebbb;
 $yellow_darken: darken($yellow, 15%);
 $yellow_lighten: lighten($yellow, 30%);
+$purple_10a: rgba(24, 0, 38, 0.1);
 
 @import 'normalize.scss';
 @import 'video.scss';
+@import 'blocks/header.scss';
+@import 'blocks/menu.scss';
 
 body {
     background: #ffffff;
@@ -31,6 +34,7 @@ body {
 }
 
 a {
+    cursor: pointer;
     text-decoration: none;
     color: $blue_link;
     transition: color 0.2s;
@@ -64,6 +68,7 @@ a {
     }
 }
 
+/*
 .header {
     margin: 35px 0 0 0;
 }
@@ -92,7 +97,7 @@ a {
 
 .menu__list-item:not(:last-child) {
     margin-right: 26px;
-}
+} */
 
 .about {
     background-color: $purple;

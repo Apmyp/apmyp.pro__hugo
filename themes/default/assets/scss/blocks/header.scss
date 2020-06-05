@@ -1,0 +1,37 @@
+.header {
+    padding-top: 16px;
+}
+
+.header__wrapper {
+
+    @media (min-width: 699px) {
+        display: grid;
+        grid-auto-flow: column;
+    }
+}
+
+.header .header__logo-link {
+    &:link, &:hover, &:focus, &:active {
+        cursor: pointer;
+        position: relative;
+        z-index: 2051;
+        text-decoration: none;
+        background-image: none;
+        background-color: transparent;
+    }
+}
+
+.header__menu {
+
+    @media (max-width: 698px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 2050;
+    }
+
+    @media (min-width: 699px) {
+        align-self: center;
+    }
+}

@@ -28,6 +28,8 @@
     "node-w3c-validator": "^1.6.1",
     "postcss-cli": "^7.1.1",
     "postcss-csso": "^4.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-media-minmax": "^4.0.0",
     "postcss-preset-env": "^6.7.0",
     "remark-cli": "^8.0.0",
     "remark-frontmatter": "^2.0.0",
@@ -111,12 +113,6 @@
       "declaration-block-semicolon-space-before": "never",
       "declaration-block-trailing-semicolon": "always",
       "declaration-empty-line-before": "never",
-      "declaration-property-value-blacklist": {
-        "/.*/": [
-          "/rgb/",
-          "/rgba/"
-        ]
-      },
       "block-closing-brace-empty-line-before": "never",
       "block-closing-brace-newline-after": "always-multi-line",
       "block-closing-brace-newline-before": "always-multi-line",
