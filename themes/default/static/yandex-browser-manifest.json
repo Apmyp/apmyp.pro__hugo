@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "api_version": 1,
+  "layout": {
+    "logo": "https://apmyp.pro/favicon@256.png",
+    "color": "#180026",
+    "show_title": true
+  }
+}
