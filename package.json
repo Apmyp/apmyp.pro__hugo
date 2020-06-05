@@ -11,7 +11,7 @@
     "editorconfig": "editorconfig-checker",
     "css": "stylelint themes/default/assets/**/*.scss --ignore-pattern normalize\\.scss",
     "typograph": "remark",
-    "deploy": "hugo --minify && cd public && ga . && git commit -m Rebuilding\\ site && gp && cd .. && npm run cache:clear",
+    "deploy": "hugo --minify && cd public && git add . && git commit -m Rebuilding\\ site && git push && cd .. && npm run cache:clear",
     "cache:clear": "curl -X POST \"https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE_ID/purge_cache\" -H \"Authorization: Bearer $CLOUDFLARE_TOKEN\" -H \"Content-Type:application/json\" --data '{\"purge_everything\":true}'"
   },
   "repository": {
