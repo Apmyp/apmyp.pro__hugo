@@ -74,7 +74,7 @@ a {
 .about__title::after {
 
     @media (width <= 550px) {
-        content: url({{ absURL "images/apmyp_small.png" }});
+        content: url({{ absURL "images/apmyp_small_x2.png" }});
         position: absolute;
         right: 0;
         top: -40px;
