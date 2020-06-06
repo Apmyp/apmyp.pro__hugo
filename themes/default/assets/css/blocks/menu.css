@@ -55,7 +55,7 @@
         padding-left: 104px;
         background-color: #ffffff;
         margin-top: 20px;
-        box-shadow: 0 50vh 0 50vh $purple_10a;
+        box-shadow: 0 50vh 0 50vh var(--purple_10a);
 
         &--open {
             display: grid;
@@ -73,11 +73,11 @@
 .menu__link {
     &--disabled {
         cursor: default;
-        color: $gray;
+        color: var(--gray);
         background-image: none;
 
         &:hover, &:focus, &:active {
-            color: $gray;
+            color: var(--gray);
             background-image: none;
         }
     }

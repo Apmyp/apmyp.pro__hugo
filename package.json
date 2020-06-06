@@ -9,7 +9,7 @@
     "html": "node-w3c-validator -i ./public/**/*.html -f lint -evH",
     "test": "npm run editorconfig && npm run css && npm run markdown",
     "editorconfig": "editorconfig-checker",
-    "css": "stylelint themes/default/assets/**/*.scss --ignore-pattern normalize\\.scss",
+    "css": "stylelint themes/default/assets/**/*.css --ignore-pattern normalize\\.css",
     "typograph": "remark",
     "deploy": "hugo --minify && cd public && git add . && git commit -m Rebuilding\\ site && git push && cd .. && npm run cache:clear",
     "cache:clear": "curl -X POST \"https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE_ID/purge_cache\" -H \"Authorization: Bearer $CLOUDFLARE_TOKEN\" -H \"Content-Type:application/json\" --data '{\"purge_everything\":true}'"
@@ -30,6 +30,7 @@
     "postcss-csso": "^4.0.0",
     "postcss-import": "^12.0.1",
     "postcss-media-minmax": "^4.0.0",
+    "postcss-nested": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
     "remark-cli": "^8.0.0",
     "remark-frontmatter": "^2.0.0",

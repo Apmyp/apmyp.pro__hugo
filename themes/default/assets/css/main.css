@@ -1,17 +1,19 @@
-$purple: #45046a;
-$gray: #737373;
-$blue_link: #226bfc;
-$blue_link_darken: darken($blue_link, 5%);
-$blue_link_lighten: lighten($blue_link, 25%);
-$yellow: #f1ebbb;
-$yellow_darken: darken($yellow, 15%);
-$yellow_lighten: lighten($yellow, 30%);
-$purple_10a: rgba(24, 0, 38, 0.1);
+@import 'themes/default/assets/css/normalize.css';
+@import 'themes/default/assets/css/video.css';
+@import 'themes/default/assets/css/blocks/header.css';
+@import 'themes/default/assets/css/blocks/menu.css';
 
-@import 'normalize.scss';
-@import 'video.scss';
-@import 'blocks/header.scss';
-@import 'blocks/menu.scss';
+:root {
+    --purple: #45046a;
+    --purple_10a: rgba(24, 0, 38, 0.1);
+    --gray: #737373;
+    --blue_link: #226bfc;
+    --blue_link_darken: #095afc;
+    --blue_link_lighten: #a0bffe;
+    --yellow: #f1ebbb;
+    --yellow_darken: #e4d87c;
+    --yellow_lighten: #ffffff;
+}
 
 body {
     background: #ffffff;
@@ -36,16 +38,16 @@ body {
 a {
     cursor: pointer;
     text-decoration: none;
-    color: $blue_link;
+    color: var(--blue_link);
     transition: color 0.2s;
-    background-image: linear-gradient($blue_link_lighten, $blue_link_lighten);
+    background-image: linear-gradient(var(--blue_link_lighten), var(--blue_link_lighten));
     background-repeat: repeat-x;
     background-size: 100% 1px;
     background-position: 0 100%;
 
     &:hover, &:focus, &:active {
-        color: $blue_link_darken;
-        background-image: linear-gradient($blue_link, $blue_link);
+        color: var(--blue_link_darken);
+        background-image: linear-gradient(var(--blue_link), var(--blue_link));
         background-repeat: repeat-x;
         background-size: 100% 1px;
         background-position: 0 100%;
@@ -100,7 +102,7 @@ a {
 } */
 
 .about {
-    background-color: $purple;
+    background-color: var(--purple);
     color: #fbfbfb;
     margin: 50px 0 0 0;
     padding: 50px 0;
@@ -149,12 +151,12 @@ a {
 }
 
 .about__link {
-    color: $yellow;
-    background-image: linear-gradient($yellow_lighten, $yellow_lighten);
+    color: var(--yellow);
+    background-image: linear-gradient(var(--yellow_lighten), var(--yellow_lighten));
 
     &:hover, &:focus, &:active {
-        color: $yellow_darken;
-        background-image: linear-gradient($yellow_darken, $yellow_darken);
+        color: var(--yellow_darken);
+        background-image: linear-gradient(var(--yellow_darken), var(--yellow_darken));
     }
 }
 
@@ -226,7 +228,7 @@ a {
 
 .chunk__title {
     font-weight: normal;
-    color: $gray;
+    color: var(--gray);
     text-transform: lowercase;
     font-size: 24px;
     margin: 0;
@@ -270,7 +272,7 @@ a {
     margin-top: 100px;
     font-size: 16px;
     line-height: 22px;
-    color: $gray;
+    color: var(--gray);
     margin-bottom: 40px;
 
     @media (min-width: 767px) {
@@ -339,7 +341,7 @@ a {
 
     .post__info {
         font-size: 16px;
-        color: $gray;
+        color: var(--gray);
         margin: 0;
         line-height: 36px;
     }
