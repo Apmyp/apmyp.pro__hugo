@@ -1,4 +1,5 @@
 .menu {
+
     @media (max-width: 698px) {
         display: grid;
     }
@@ -55,7 +56,6 @@
         padding-left: 104px;
         background-color: #ffffff;
         margin-top: 20px;
-        box-shadow: 0 50vh 0 50vh var(--purple_10a);
 
         &--open {
             display: grid;

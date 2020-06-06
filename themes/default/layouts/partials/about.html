@@ -8,6 +8,17 @@
       
       Сейчас я&nbsp;<a class="about__link" href="tg://resolve?domain=apmyp0" target="_blank" rel="noopener noreferrer">ищу работу</a>.
     </p>
-    <div class="about__image"></div>
+    <div class="about__image">
+      <picture>
+        <source type="image/webp" width="190" height="304" src="{{ absURL "images/apmyp_large.webp" }}"
+          srcset="{{ absURL "images/apmyp_large_x2.webp" }} 2x, {{ absURL "images/apmyp_large.webp" }} 1x">
+        <img 
+          width="190"
+          height="304"
+          src="{{ absURL "images/apmyp_large.png" }}"
+          srcset="{{ absURL "images/apmyp_large_x2.png" }} 2x, {{ absURL "images/apmyp_large.png" }} 1x"
+        >
+      </picture>
+    </div>
   </div>
 </section>
