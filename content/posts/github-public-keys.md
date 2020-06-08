@@ -1,7 +1,7 @@
 ---
 title: "Твои публичные ключи"
 date: 2020-06-08T19:15:50+03:00
-categories: ["development"]
+categories: ["lifehack"]
 description: "Удобный лайфхак, когда тебе нужно взять публичный ключ"
 ---
 

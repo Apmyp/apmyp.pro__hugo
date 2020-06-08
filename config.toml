@@ -12,6 +12,7 @@ theme = "default"
 	Tagline = "Arthur Bordenyuk makes you be aware of mindfulness"
 	author = "Arthur Bordenyuk"
 	og_image = "og_image.png"
+  twitter_og_image = "twitter_og_image.png"
 	twitter = "@apmyp0"
 
 [markup]

@@ -10,6 +10,8 @@
 <meta name="twitter:creator" content="{{ .Site.Params.twitter }}">
 {{ if .Params.twitter_og_image }}
   <meta name="twitter:image" content="{{ .Params.twitter_og_image | absURL }}">
+{{ else }}
+  <meta name="twitter:image" content="{{ .Site.Params.twitter_og_image | absURL }}">
 {{ end }}
 
 <meta property="og:locale" content="ru_RU">

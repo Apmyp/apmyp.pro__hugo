@@ -3,8 +3,8 @@ title: "Increment — выпуск про фронтенд"
 date: 2020-06-05T14:24:02+03:00
 categories: ["development"]
 description: "Инкремент — журнал о разработке. 13 выпуск посвящен Фронтенду. Я подготовил выжимку самого интересного из этого выпуска"
-og_image: "/images/increment-frontend/tg_resolve_og_image.png"
-twitter_og_image: "/images/increment-frontend/tg_resolve_twitter_og_image.png"
+og_image: "/images/increment-frontend/og_image.png"
+twitter_og_image: "/images/increment-frontend/twitter_og_image.png"
 ---
 
 Инкремент — это журнал о том, как команды разрабатывают, управляют и используют масштабные программные системы.
