@@ -7,20 +7,16 @@ description: "Удобный лайфхак, когда тебе нужно вз
 
 Свой или коллеги публичные ключи можно взять из Гитхаба.
 
-```
-https://github.com/apmyp.keys
-```
+Например:\
+`https://github.com/apmyp.keys`
 
 Публичный ключ можно без проблем показывать. Без секретного ничего нельзя сделать от твоего имени.
 
-Вот ключи DHH:
-
-```
-https://github.com/dhh.keys
-```
+Вот ключи DHH:\
+`https://github.com/dhh.keys`
 
 Это может помочь при настройке сервера или когда твой ключ просит коллега:
 
-```
-curl https://github.com/apmyp.keys >> ~/.ssh/authorized_keys
-```
+{{\< highlight go >}}
+$ curl <https://github.com/apmyp.keys> ≫ ~/.ssh/authorized_keys
+{{\< / highlight >}}
