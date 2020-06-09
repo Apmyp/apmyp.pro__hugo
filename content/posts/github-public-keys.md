@@ -17,6 +17,6 @@ description: "Удобный лайфхак, когда тебе нужно вз
 
 Это может помочь при настройке сервера или когда твой ключ просит коллега:
 
-{{\< highlight go >}}
-$ curl <https://github.com/apmyp.keys> ≫ ~/.ssh/authorized_keys
-{{\< / highlight >}}
+{{< highlight go >}}
+$ curl <https://github.com/apmyp.keys> >> ~/.ssh/authorized_keys
+{{< /highlight >}}
