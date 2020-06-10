@@ -1,4 +1,5 @@
 const Typograf = require("typograf");
+// const shortcodes = require("remark-shortcodes");
 
 const privateLabel = "\uF000";
 // Узкий неразрывный пробел для сокращений т.д. и т.п.
@@ -37,6 +38,7 @@ Typograf.addRules([
 const typograf = new Typograf({
   locale: [`ru`],
 });
+typograf.addSafeTag("\\{\\{", "\\}\\}");
 typograf.enableRule("ru/nnbsp/abbr");
 typograf.disableRule("ru/nbsp/abbr");
 
@@ -51,6 +53,10 @@ module.exports = {
     fences: true,
   },
   plugins: [
+    [
+      "remark-shortcodes",
+      { startBlock: "{{>", endBlock: "<}}", inlineMode: true },
+    ],
     "remark-frontmatter",
     ["remark-lint-emphasis-marker"],
     ["remark-lint-strong-marker"],

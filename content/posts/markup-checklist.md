@@ -17,7 +17,6 @@ categories: ["checklist"]
 **Вёрстка**
 
 -   Проверить дерево заголовков на каждой странице: <https://chrome.google.com/webstore/detail/seo-meta-in-1-click/bjogjfinolnhfhkbipphpdlldadpnmhc?hl=ru>
-    <http://snpy.in/tJH0DL>
 - Проверить вёрстку в валидаторе: <https://validator.w3.org/>
 - Проверить все страницы в Сафари
 

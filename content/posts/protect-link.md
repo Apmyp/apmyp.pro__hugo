@@ -18,4 +18,4 @@ description: "Добавь рел и спи спокойно"
 ```
 
 Подробнее\
-{{\< l «Почему опасно не добавляет правильный rel?» "[https://github.com/iammerrick/unvalidated-redirects-example»](https://github.com/iammerrick/unvalidated-redirects-example") >}}
+{{< l "Почему опасно не добавляет правильный rel?" "https://github.com/iammerrick/unvalidated-redirects-example" >}}

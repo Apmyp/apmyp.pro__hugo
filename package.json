@@ -39,6 +39,7 @@
     "remark-lint-ordered-list-marker-value": "^2.0.0",
     "remark-lint-strong-marker": "^2.0.0",
     "remark-lint-unordered-list-marker-style": "^2.0.0",
+    "remark-shortcodes": "^0.3.1",
     "stylelint": "^13.5.0",
     "typograf": "^6.11.1"
   },
