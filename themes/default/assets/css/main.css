@@ -78,7 +78,6 @@ a {
         top: -40px;
         right: 0;
         width: 100px;
-        max-width: 10px;
         height: 500px;
         background-image: url({{ absURL "images/apmyp_small_x2.png" }});
         background-repeat: no-repeat;
