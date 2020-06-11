@@ -41,6 +41,7 @@
     "remark-lint-unordered-list-marker-style": "^2.0.0",
     "remark-shortcodes": "^0.3.1",
     "stylelint": "^13.5.0",
+    "stylelint-config-rational-order": "^0.1.2",
     "typograf": "^6.11.1"
   },
   "browserslist": [
@@ -56,6 +57,9 @@
     ]
   },
   "stylelint": {
+    "extends": [
+      "stylelint-config-rational-order"
+    ],
     "rules": {
       "color-no-invalid-hex": true,
       "font-family-no-duplicate-names": true,

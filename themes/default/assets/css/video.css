@@ -29,11 +29,11 @@
     left: 50%;
     z-index: 1;
     display: none;
-    padding: 0;
     width: 68px;
     height: 48px;
-    border: none;
+    padding: 0;
     background-color: transparent;
+    border: none;
     transform: translate(-50%, -50%);
     cursor: pointer;
 }
