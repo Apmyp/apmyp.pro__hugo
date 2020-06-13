@@ -253,7 +253,7 @@ a {
         margin: 0;
         font-weight: normal;
         font-size: 30px;
-        line-height: 30px;
+        line-height: 1.15;
 
         @media (min-width: 767px) {
             font-size: 36px;
@@ -339,4 +339,18 @@ a {
 
 code {
     font-size: 16px;
+}
+
+.highlight {
+
+    @media (width < 1000px) {
+        word-break: break-word;
+    }
+
+    .language-bash {
+
+        @media (width < 1000px) {
+            white-space: initial;
+        }
+    }
 }

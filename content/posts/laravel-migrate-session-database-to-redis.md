@@ -163,7 +163,11 @@ REDIS_PORT=6379
 {{< / highlight >}}
 
 {{< highlight bash >}}
-$ php artisan cache:clear && php artisan config:cache
+$ php artisan cache:clear
+{{< / highlight >}}
+
+{{< highlight bash >}}
+$ php artisan config:cache
 {{< / highlight >}}
 
 ## Вместо итогов
