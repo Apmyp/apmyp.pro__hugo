@@ -294,10 +294,15 @@ a {
 
     h2, h3, h4, h5, h6 {
         font-weight: normal;
+        line-height: 1.15;
     }
 
     ul, ol {
         line-height: 28px;
+    }
+
+    img {
+        max-width: 100%;
     }
 }
 
