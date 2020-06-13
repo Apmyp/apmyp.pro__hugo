@@ -1,4 +1,4 @@
-<title>{{ if .IsHome }}Блог Артура про IT{{ else }}{{ with .Title }}{{ humanize . }} — {{ end }}{{ .Site.Title }}{{ end }}</title>
+<title>{{ if .IsHome }}Блог Артура про IT{{ else }}{{ with .Title }}{{ . }} — {{ end }}{{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}">
 <meta name="keywords" content="{{ .Site.Params.keywords }}">
 <meta name="robots" content="noodp">
@@ -49,7 +49,10 @@
           "https://twitter.com/apmyp0"
         ]
       },
-    "description": "{{ .Site.Params.description }}"
+    "description": "{{ .Site.Params.description }}",
+    "sameAs" : [
+      "https://twitter.com/apmyp0"
+    ]
   }
   </script>
 
