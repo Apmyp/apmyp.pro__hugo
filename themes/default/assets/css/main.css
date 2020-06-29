@@ -354,3 +354,34 @@ code {
         }
     }
 }
+
+.paragraph-with-factoid {
+    position: relative;
+}
+
+.factoid {
+    margin-top: -10px;
+    font-size: 16px;
+
+    @media (min-width: 768px) {
+        position: absolute;
+        top: 8px;
+        left: 100%;
+        width: 206px;
+        margin-top: 0;
+        margin-left: 24px;
+        color: #292929;
+    }
+
+    @media (min-width: 820px) {
+        width: 276px;
+    }
+}
+
+.factoid p {
+    margin: 0;
+}
+
+.factoid p:not(:last-child) {
+    margin-bottom: 4px;
+}
