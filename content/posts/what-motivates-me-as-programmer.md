@@ -2,7 +2,7 @@
 title: "Что меня мотивирует, как программиста"
 date: 2020-06-29T10:35:02+03:00
 categories: ["principle"]
-description: "Эффективная работа — это когда ты понимаешь, что тебя мотивирует, а что нет"
+description: "Эффективная работа возможна только когда ты понимаешь, что тебя мотивирует, а что нет"
 og_image: "/images/what-motivates-me-as-programmer/og_image.png"
 twitter_og_image: "/images/what-motivates-me-as-programmer/twitter_og_image.png"
 ---
