@@ -13,7 +13,7 @@ twitter_og_image: "/images/what-motivates-me-as-programmer/twitter_og_image.png"
 </p>
 <div class="factoid">
 <p>
-{{< l "HEY" "https://hey.com/" >}} — почтовый сервис от создателей Basecamp
+{{< l "HEY" "https://hey.com/" >}} — свежий почтовый сервис от создателей Basecamp
 </p>
 </div>
 </div>
