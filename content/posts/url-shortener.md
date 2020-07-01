@@ -49,11 +49,11 @@ Benefits:
 
 Shortener implementation:
 
-```
+{{< highlight javascript >}}
 function shortener() {
   const chars = '-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz'.split('');
   const count = chars.length;
-  
+
   function encode(num) {
     if ( num === 0 ) {
       return "";
@@ -61,9 +61,9 @@ function shortener() {
       return encode(parseInt(num / count, 10)) + chars[num % count];
     }
   }
-  
+
   function decode(str) {
-    return str.split('').reduce((num, val) => { 
+    return str.split('').reduce((num, val) => {
       return num * count + chars.indexOf(val);
     }, 0);
   }
@@ -75,11 +75,11 @@ function shortener() {
 }
 
 export { shortener };
-```
+{{< /highlight >}}
 
 Shortener example:
 
-```
+{{< highlight javascript >}}
 import { shortener } from "./shorten.js";
 
 const { encode, decode } = shortener();
@@ -92,4 +92,4 @@ decode(encode(112233)); // => 112233
 
 encode(1000000000); // => 'vagc-'
 decode(encode(1000000000)); // => 1000000000
-```
+{{< /highlight >}}
