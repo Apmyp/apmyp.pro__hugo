@@ -172,51 +172,56 @@ a {
     }
 }
 
-.chunk__list li.iconed .chunk__title {
-  position: relative;
-  
-  &::before {
-    content: '';
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-image: url("data:image/svg+xml,%3Csvg height='512' viewBox='0 0 24 24' width='512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.36 8.58l-7.38-1.12L12.68.4c-.25-.52-1.11-.52-1.36 0l-3.3 7.05L.64 8.58c-.6.1-.85.83-.43 1.27l5.36 5.5-1.26 7.76a.75.75 0 001.1.78L12 20.24l6.59 3.65a.75.75 0 001.1-.78l-1.26-7.77 5.36-5.49a.75.75 0 00-.43-1.27z' fill='%23ffc107'/%3E%3C/svg%3E");
-    background-size: contain;
-    margin-right: 4px;
+.chunk__list li.iconed .chunk__subheader {
+    position: relative;
 
-    @media (min-width: 1000px) {
-      margin-right: 0;
-      position: absolute;
-      left: -24px;
-      top: 4px;
+    &::before {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+        background-image: url("data:image/svg+xml,%3Csvg height='512' viewBox='0 0 24 24' width='512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.36 8.58l-7.38-1.12L12.68.4c-.25-.52-1.11-.52-1.36 0l-3.3 7.05L.64 8.58c-.6.1-.85.83-.43 1.27l5.36 5.5-1.26 7.76a.75.75 0 001.1.78L12 20.24l6.59 3.65a.75.75 0 001.1-.78l-1.26-7.77 5.36-5.49a.75.75 0 00-.43-1.27z' fill='%23ffc107'/%3E%3C/svg%3E");
+        background-size: contain;
+        content: '';
+
+        @media (min-width: 1000px) {
+            position: absolute;
+            top: 4px;
+            left: -24px;
+            margin-right: 0;
+        }
     }
-  }
 }
 
 .chunk__list.chunk__list--with-info li {
-  margin: 40px 0 24px 0;
+    margin: 40px 0 24px 0;
 
-  @media (min-width: 1000px) {
-    margin: 24px 0;
-  }
+    @media (min-width: 1000px) {
+        margin: 24px 0;
+    }
 }
 
 .chunk__list a {
     font-size: inherit;
 }
 
-.chunk__title {
-  margin: 0;
-  font-size: 20px;
-  line-height: 22px;
-  color: #000;
-  text-transform: initial;
+.chunk__subheader {
+    margin: 0;
+    color: #000000;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: initial;
+
+    @media (min-width: 1000px) {
+      font-size: 20px;
+      line-height: 22px;
+    }
 }
 
 .chunk__excerpt {
-  font-size: 16px;
-  line-height: 18px;
-  margin: 4px 0 0;
+    margin: 6px 0 0;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .main-header {

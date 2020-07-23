@@ -9,7 +9,7 @@
     <ul class="chunk__list chunk__list--with-info">
       {{ range .Pages.ByDate }}
       <li class="{{ cond .Params.iconed "iconed" "" }}">
-        <p class="chunk__title">{{ .Title }}</p>
+        <p class="chunk__subheader">{{ .Title }}</p>
         <p class="chunk__excerpt">{{ .Params.excerpt }}</p>
       </li>
       {{ end }}
