@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{- partial "about.html" . -}}
+
+<div class="wrapper">
+  <h1 class="main-header">{{ .Title }}</h1>
+  {{ .Content }}
+  {{ partial "posts.html" . }}
+</div>
+
+{{ end }}

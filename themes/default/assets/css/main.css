@@ -213,8 +213,8 @@ a {
     text-transform: initial;
 
     @media (min-width: 1000px) {
-      font-size: 20px;
-      line-height: 22px;
+        font-size: 20px;
+        line-height: 22px;
     }
 }
 
