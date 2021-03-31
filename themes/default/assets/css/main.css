@@ -253,7 +253,7 @@ a {
 .footer__image {
     width: 55px;
     min-width: 55px;
-    margin-right: auto;
+    margin-right: 36px;
 
     @media (min-width: 767px) {
         margin-right: inherit;
@@ -287,6 +287,11 @@ a {
     margin: 0;
     padding: 0;
     list-style: none;
+    line-height: 24px;
+    @media (min-width: 767px) {
+        display: flex;
+        gap: 18px;
+    }
 }
 
 .footer__list a {
