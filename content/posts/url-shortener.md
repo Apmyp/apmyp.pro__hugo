@@ -1,7 +1,7 @@
 ---
 title: "How shortener feature works"
 date: 2020-05-26T13:24:02+03:00
-categories: ["case"]
+categories: ["development"]
 description: "Arthur Bordenyuk is going to explain how to implement url shortener"
 ---
 
