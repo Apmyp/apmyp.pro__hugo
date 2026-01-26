@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{- partial "about.html" . -}}
+
+<div class="wrapper">
+  <h1 class="main-header">{{ .Title }}</h1>
+
+  {{ .Content }}
+
+  <section class="chunk">
+    <h2 class="chunk__title">все эпизоды</h2>
+    <div class="chunk__list">
+      {{ range .Pages.ByDate.Reverse }}
+        {{ partial "episode.html" . }}
+      {{ end }}
+    </div>
+  </section>
+</div>
+
+{{ end }}

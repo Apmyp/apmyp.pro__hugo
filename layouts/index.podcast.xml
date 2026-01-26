@@ -1,0 +1,56 @@
+{{- $podcast := .Site.Params.podcast -}}
+{{- $episodes := where .Site.RegularPages "Section" "episodes" -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" | safeHTML }}
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ $podcast.title }}</title>
+    <link>{{ absURL "episodes/" }}</link>
+    <description>{{ $podcast.description }}</description>
+    <language>{{ $podcast.language }}</language>
+    <copyright>© {{ now.Year }} {{ $podcast.author }}</copyright>
+    <lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</lastBuildDate>
+
+    <atom:link href="{{ absURL "podcast.xml" }}" rel="self" type="application/rss+xml"/>
+
+    <itunes:author>{{ $podcast.author }}</itunes:author>
+    <itunes:summary>{{ $podcast.description }}</itunes:summary>
+    <itunes:owner>
+      <itunes:name>{{ $podcast.author }}</itunes:name>
+      <itunes:email>{{ $podcast.email }}</itunes:email>
+    </itunes:owner>
+    <itunes:image href="{{ $podcast.image }}"/>
+    <itunes:explicit>{{ if $podcast.explicit }}yes{{ else }}no{{ end }}</itunes:explicit>
+    {{- range $podcast.categories }}
+    <itunes:category text="{{ . }}"/>
+    {{- end }}
+    <itunes:keywords>{{ $podcast.keywords }}</itunes:keywords>
+
+    {{- range $episodes.ByDate.Reverse }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <guid isPermaLink="true">{{ .Permalink }}</guid>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+
+      <description><![CDATA[
+        {{ if .Params.description }}{{ .Params.description }}{{ end }}
+        {{ .Content }}
+      ]]></description>
+
+      <enclosure
+        url="{{ .Params.audioUrl }}"
+        length="{{ .Params.fileSize }}"
+        type="audio/mpeg"/>
+
+      <itunes:duration>{{ .Params.duration }}</itunes:duration>
+      <itunes:summary>{{ .Params.description }}</itunes:summary>
+      <itunes:image href="{{ $podcast.image }}"/>
+      <itunes:episode>{{ .Params.episodeNumber }}</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>no</itunes:explicit>
+    </item>
+    {{- end }}
+  </channel>
+</rss>

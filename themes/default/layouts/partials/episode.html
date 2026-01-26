@@ -1,0 +1,8 @@
+<div class="chunk__list-item">
+  <a href="{{ .Permalink }}" title="{{ .Title }}">
+    Эпизод {{ printf "%03d" .Params.episodeNumber }}: {{ .Title }}
+  </a>
+  <span class="episode__meta">
+    ({{ .Date.Format "02.01.2006" }}, {{ .Params.duration }})
+  </span>
+</div>

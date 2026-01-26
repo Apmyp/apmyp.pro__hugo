@@ -15,6 +15,17 @@ theme = "default"
   twitter_og_image = "twitter_og_image.png"
 	twitter = "@apmyp0"
 
+[params.podcast]
+  title = "Подкаст Apmyp"
+  description = "Подкаст о разработке, продуктоводстве и жизни"
+  author = "Arthur Bordenyuk"
+  email = "podcast@apmyp.pro"
+  image = "https://r2-url/podcast-cover.jpg"
+  language = "ru-RU"
+  explicit = false
+  categories = ["Technology", "Business"]
+  keywords = "разработка, менеджмент, подкаст"
+
 [markup]
   [markup.goldmark.renderer]
     unsafe= true
@@ -28,3 +39,11 @@ theme = "default"
     noClasses = true
     style = "xcode"
     tabWidth = 4
+
+[outputFormats.podcast]
+  mediaType = "application/rss+xml"
+  baseName = "podcast"
+  isPlainText = false
+
+[outputs]
+  home = ["HTML", "RSS", "podcast"]

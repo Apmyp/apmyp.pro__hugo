@@ -1,0 +1,13 @@
+{{ $episodes := ($.Site.GetPage "episodes").Pages }}
+{{ range first 1 $episodes }}
+  <section class="chunk">
+    <h2 class="chunk__title">последний эпизод</h2>
+    <ul class="chunk__list">
+      <li>
+        <a href="{{ .Permalink }}" title="{{ .Title }}">
+          Эпизод {{ printf "%03d" .Params.episodeNumber }}: {{ .Title }}
+        </a>
+      </li>
+    </ul>
+  </section>
+{{ end }}

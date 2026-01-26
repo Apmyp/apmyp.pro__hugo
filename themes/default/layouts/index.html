@@ -2,6 +2,8 @@
 {{- partial "about.html" . -}}
 
 <div class="wrapper">
+  {{ partial "latest_episode.html" . }}
+
   <h1 class="main-header">Блог</h1>
   {{ partial "latest_post.html" . }}
   {{ partial "all_posts.html" . }}
