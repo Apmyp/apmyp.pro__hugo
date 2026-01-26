@@ -28,5 +28,8 @@ vendor
 /public/
 /resources/_gen/
 
+# Wrangler (Cloudflare CLI) local files
+.wrangler/
+
 # Claude local settings
 .claude/*.local.json
