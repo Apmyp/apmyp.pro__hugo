@@ -27,3 +27,6 @@ vendor
 
 /public/
 /resources/_gen/
+
+# Claude local settings
+.claude/*.local.json
