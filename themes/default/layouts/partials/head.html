@@ -3,14 +3,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <link rel='canonical' href='{{ .Permalink }}'>
-  <meta name="yandex-verification" content="adf9bacf171ef99e" />
-  <meta name="google-site-verification" content="WTHqdU02rgaCa1-nQGpChuax1GrybYF38phTQkLk4W4" />
 
-  {{ partial "fonts.html" . }}
-  
-  {{- $options := (dict "targetPath" "css/main.css" "outputStyle" "expanded" "enableSourceMap" "true") -}}
-  {{- $styles := resources.Get "css/main.css" | resources.ExecuteAsTemplate "css/main.css" . | resources.PostCSS | resources.ToCSS $options | resources.Minify | resources.Fingerprint "sha512" }}
-  <link rel='stylesheet' href='{{ $styles.Permalink }}' integrity='{{ $styles.Data.Integrity }}'>
+  <link rel='stylesheet' href='/css/main.min.css'>
   <link rel="alternate" type="application/rss+xml" href="{{ absURL "index.xml" }}" title="RSS">
 
   {{ partial "favicons.html" . }}
