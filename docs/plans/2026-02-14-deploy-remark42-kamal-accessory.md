@@ -77,11 +77,11 @@ Add Remark42 comment system to apmyp.pro blog posts. Remark42 runs as a Kamal ac
 **Files:**
 - Modify: `themes/default/layouts/partials/post.html`
 
-- [ ] Add comments section after closing `</div>` of `post-container` (line 26), before closing `</div>` of `wrapper` (line 27)
-- [ ] Wrap in `{{ if not .Params.disableComments }}`
-- [ ] Include `<div id="remark42"></div>`
-- [ ] Include `<script>` with `remark_config` object: host and site_id from `.Site.Params.remark42`, locale "ru"
-- [ ] Include standard Remark42 embed.es6.mjs script loader
+- [x] Add comments section after closing `</div>` of `post-container` (line 26), before closing `</div>` of `wrapper` (line 27)
+- [x] Wrap in `{{ if not .Params.disableComments }}`
+- [x] Include `<div id="remark42"></div>`
+- [x] Include `<script>` with `remark_config` object: host and site_id from `.Site.Params.remark42`, locale "ru"
+- [x] Include standard Remark42 embed.es6.mjs script loader
 
 ### Task 7: Commit, push, and deploy Hugo site
 
