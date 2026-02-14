@@ -30,8 +30,8 @@ Add Remark42 comment system to apmyp.pro blog posts. Remark42 runs as a Kamal ac
 **Files:**
 - Modify: `.kamal/secrets`
 
-- [ ] Generate secret via `openssl rand -hex 32`
-- [ ] Append `SECRET=<generated_value>` line to `.kamal/secrets`
+- [x] Generate secret via `openssl rand -hex 32`
+- [x] Append `SECRET=<generated_value>` line to `.kamal/secrets`
 
 ### Task 2: Add Remark42 accessory to Kamal deploy config
 
