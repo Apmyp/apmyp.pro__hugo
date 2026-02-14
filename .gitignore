@@ -33,3 +33,6 @@ vendor
 
 # Claude local settings
 .claude/*.local.json.playwright-mcp/
+
+# ralphex progress logs
+progress*.txt
