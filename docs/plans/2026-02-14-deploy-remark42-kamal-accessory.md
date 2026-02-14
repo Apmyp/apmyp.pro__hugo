@@ -93,7 +93,7 @@ Add Remark42 comment system to apmyp.pro blog posts. Remark42 runs as a Kamal ac
 
 ### Task 8: End-to-end verification
 
-- [ ] `curl https://comments.apmyp.pro/ping` returns pong
-- [ ] `kamal accessory logs remark42` shows no errors
-- [ ] Visit a blog post - Remark42 widget appears below content
-- [ ] Test `disableComments: true` in a post front matter hides the widget
+- [x] `curl https://comments.apmyp.pro/ping` returns pong
+- [x] `kamal accessory logs remark42` shows no errors
+- [x] Visit a blog post - Remark42 widget appears below content
+- [x] Test `disableComments: true` in a post front matter hides the widget
