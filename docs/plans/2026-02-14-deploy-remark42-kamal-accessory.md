@@ -67,7 +67,7 @@ Add Remark42 comment system to apmyp.pro blog posts. Remark42 runs as a Kamal ac
 **Files:**
 - Modify: `config.toml`
 
-- [ ] Add `[params.remark42]` section after `[params.podcast]`:
+- [x] Add `[params.remark42]` section after `[params.podcast]`:
   - `host = "https://comments.apmyp.pro"`
   - `site_id = "apmyp.pro"`
 

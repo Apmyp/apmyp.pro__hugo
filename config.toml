@@ -26,6 +26,10 @@ theme = "default"
   categories = ["Technology", "Business"]
   keywords = "разработка, менеджмент, подкаст"
 
+[params.remark42]
+  host = "https://comments.apmyp.pro"
+  site_id = "apmyp.pro"
+
 [markup]
   [markup.goldmark.renderer]
     unsafe= true
