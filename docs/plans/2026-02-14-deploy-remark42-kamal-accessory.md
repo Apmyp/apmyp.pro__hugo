@@ -87,9 +87,9 @@ Add Remark42 comment system to apmyp.pro blog posts. Remark42 runs as a Kamal ac
 
 **Repo:** apmyp.pro__hugo
 
-- [ ] Commit changes (config.toml + post.html)
-- [ ] Push to master (triggers Cloudflare Pages auto-deploy)
-- [ ] Run `./deploy.sh` to build locally and clear Cloudflare cache
+- [x] Commit changes (config.toml + post.html)
+- [x] Push to master (triggers Cloudflare Pages auto-deploy)
+- [x] Run `./deploy.sh` to build locally and clear Cloudflare cache
 
 ### Task 8: End-to-end verification
 
