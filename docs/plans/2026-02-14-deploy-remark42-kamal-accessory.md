@@ -52,9 +52,9 @@ Add Remark42 comment system to apmyp.pro blog posts. Remark42 runs as a Kamal ac
 
 **Repo:** vektorputi.me
 
-- [ ] Commit changes (deploy.yml + secrets)
-- [ ] Run `kamal accessory boot remark42` from vektorputi.me directory
-- [ ] Verify container is running via SSH: `docker ps | grep remark42`
+- [x] Commit changes (deploy.yml + secrets)
+- [x] Run `kamal accessory boot remark42` from vektorputi.me directory
+- [x] Verify container is running via SSH: `docker ps | grep remark42`
 
 ### Task 4: Register Remark42 with kamal-proxy
 
