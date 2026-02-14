@@ -58,8 +58,8 @@ Add Remark42 comment system to apmyp.pro blog posts. Remark42 runs as a Kamal ac
 
 ### Task 4: Register Remark42 with kamal-proxy
 
-- [ ] SSH to server and run: `docker exec kamal-proxy kamal-proxy deploy remark42 --target localhost:8080 --host comments.apmyp.pro --tls`
-- [ ] Verify: `curl https://comments.apmyp.pro/ping` returns pong (may need a moment for TLS cert)
+- [x] SSH to server and run: `docker exec kamal-proxy kamal-proxy deploy remark42 --target 172.18.0.4:8080 --host comments.apmyp.pro --tls --health-check-path /ping` (used container IP instead of localhost; added --health-check-path /ping since default /up doesn't exist)
+- [x] Verify: `curl https://comments.apmyp.pro/ping` returns pong
 
 ### Task 5: Add Remark42 params to Hugo config
 
