@@ -39,7 +39,7 @@ Add Remark42 comment system to apmyp.pro blog posts. Remark42 runs as a Kamal ac
 **Files:**
 - Modify: `config/deploy.yml`
 
-- [ ] Append `accessories:` block (replacing the commented-out section) with `remark42:` entry:
+- [x] Append `accessories:` block (replacing the commented-out section) with `remark42:` entry:
   - image: `ghcr.io/umputun/remark42:latest`
   - host: `65.109.160.232`
   - port: `"127.0.0.1:8080:8080"`
